@@ -5,3 +5,5 @@ class Solution(object):
         :rtype: str
         """
         ans = s[::-1]
+        return ans
+        
