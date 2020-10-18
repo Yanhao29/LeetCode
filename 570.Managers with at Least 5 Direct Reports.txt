@@ -1,0 +1,4 @@
+# Write your MySQL query statement below
+SELECT Name FROM Employee
+WHERE Id IN
+(SELECT ManagerID FROM Employee GROUP BY ManagerID HAVING COUNT(ManagerID)>=5);
